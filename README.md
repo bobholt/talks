@@ -1,4 +1,4 @@
-talks
+Talks
 =====
 
-Source for talks I have given
+JS-format talks from conferences and meetups. One day I'll convert PowerPoint talks over as well.

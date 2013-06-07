@@ -1,0 +1,1110 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>reveal.js - The HTML Presentation Framework</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.min.css">
+		<link rel="stylesheet" href="css/theme/bob.css" id="theme">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- If the query includes 'print-pdf', use the PDF print sheet -->
+		<script>
+			document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+  <div class="reveal">
+
+  <!-- Any section element inside of this container is displayed as a slide -->
+  <div class="slides">
+
+  <section id="start">
+    <h1 style="margin-bottom: .5em;">Home-growing<br>Top-Notch Developers</h1>
+    <h3>jQuery Conference &middot; Portland, OR<br>14 June 2013</h3>
+
+    <aside class="notes">
+      <p>Thank you very much.</p>
+      <p>I'll be talking to you today about Home-Growing Top-Notch Developers.</p>
+      <p>That sounds awesome, right?</p>
+      <p>Well, it is! And not just because I'm trying to keep you awake at 5:15 on a Friday.</p>
+    </aside>
+  </section>
+
+  <section id="about-me">
+    <div>
+      <div class="about-img">
+        <img src="images/bob.png" alt="">
+      </div>
+      <div class="about-meta">
+        <h2>Bob Holt</h2>
+        <h3>Bocoup</h3>
+        <p>@bobholt</p>
+      </div>
+    </div>
+
+    <aside class="notes">
+      <p>But first a little about me, so we can be friends.</p>
+      <p>I am Bob Holt.</p>
+      <p>I work on the Open Web.</p>
+      <p>I have recently joined the team at Bocoup in Boston.</p>
+      <p>For those that don't know us, Bocoup is an Open Web technology company by and for programmers.</p>
+      <p>We create new Open Web technologies and help them become viable through consulting, training, coaching and community development.</p>
+      <p>It's a cozy place for me to be, given the subject of this talk.</p>
+    </aside>
+  </section>
+
+  <section id="hiring">
+    <aside class="notes">
+      <p>A show of hands: how many people in here are trying to hire JavaScript developers right now?</p>
+      <p>And how many of you are finding it pretty easy to find them?</p>
+      <p>Right. So the problem we're facing right now is that we all want expert developers to fill out our teams.</p>
+      <p>But, a lot of teams are finding themselves in the situation where they need to either put butts in seats or turn down work.</p>
+      <p>So they're forced to hire developers at a lower skill level than they would like, and ramp them up.</p>
+      <p>The positive side-effect of this problem, though, is that if you can hold on to developers you've ripened in house, you're able to maintain organizational knowledge and keep costs down.</p>
+      <p>So how do we do this?</p>
+    </aside>
+  </section>
+
+  <section id="overview">
+    <ul class="bullet-list">
+      <li>Defining Expertise</li>
+      <li>Building Expertise</li>
+      <li>Managing Your Personal Development</li>
+    </ul>
+
+    <aside class="notes">
+      <p>Let's assume that if we're trying to build expert developers, then what we're trying to do is cultivate this abstract notion of "expertise."</p>
+      <p>So first, we really want to define what expertise is.</p>
+      <p>Then we'll move on to how to build it in individuals and teams, and we'll end by talking about some additional strategies for what you as an individual can do to help yourself grow as a developer.</p>
+    </aside>
+  </section>
+
+  <section id="come-with-me" data-state="forest-path" style="height:100%">
+    <small><a href="http://www.flickr.com/photos/gruesome/2551405230/">Forest Path</a> by Jeff Power <a href="http://creativecommons.org/licenses/by-nc-nd/2.0/">Attribution-NonCommercial-NoDerivs License</a></small>
+
+    <aside class="notes">
+      <p>Come with me. Come on.</p>
+    </aside>
+  </section>
+
+  <section id="novice-expert-distinction">
+    <div class="images">
+      <div style="width: 50%; float: left;">
+        <img src="/images/training-wheels.jpg" alt="Training Wheels"/>
+        <small style="display: inline; position: static;"><a href="http://www.flickr.com/photos/soyunterrorista/2658174628/">mission family</a> by kate mccarthy <a href="http://creativecommons.org/licenses/by-sa/2.0/">Attribution-ShareAlike License</a></small>
+      </div>
+      <div style="width:50%; float: left;">
+        <img src="/images/tour-de-france.jpg" alt="Tour de France"/>
+        <small style="display: inline; position: static;">By Celso FLORES (originally posted to Flickr as Tour de France - 08) [<a href="http://creativecommons.org/licenses/by/2.0">CC-BY-2.0</a>], <a href="http://commons.wikimedia.org/wiki/File%3ATour_de_France_-_04.jpg">via Wikimedia Commons</a></small>
+      </div>
+    </div>
+    <aside class="notes">
+      <p>A lot of times when we think about experts and expertise, we draw this mental distinction between novices and experts and say that you're either one or the other.</p>
+      <p>But, things are a little more complex than that</p>
+    </aside>
+  </section>
+
+  <section id="skill-acquisition">
+    <h2>Skill Acquisition</h2>
+
+    <aside class="notes">
+      <p>Over the years, quite a few scholars have tried to define the way we gain expertise as a process of "skill acquisition."</p>
+      <p>They all try to define the gray area between novice and expert.</p>
+    </aside>
+  </section>
+
+  <section id="dreyfus" style="height: 64.5%">
+    <h2>Dreyfus Model of Skill Acquisition</h2>
+
+    <img class="fragment" src="/images/mind-over-machine.jpg" alt="Mind Over Machine: Cover Image" style="max-height: 62%" />
+
+    <aside class="notes">
+      <p>Probably the most widely-recognized of these is the Dreyfus Model of Skill Acquisition.</p>
+      <p>This model was defined by Hubert and Stuart Dreyfus in their book <cite>Mind over Machine</cite>.</p>
+      <p>It describes the way humans acquire skills over time.</p>
+    </aside>
+  </section>
+
+  <section id="dreyfus-novice" style="height: 64.5%">
+    <h2>Dreyfus Model of Skill Acquisition</h2>
+
+    <ol class="bullet-list" style="width: 35.725%;">
+      <li>Novice</li>
+    </ol>
+
+    <aside class="notes">
+      <p>We start off, predictably, in the novice stage.</p>
+      <p>In this stage, we don't have any sense of the overall project we're trying to accomplish.</p>
+      <p>In fact, we can't handle thinking about the big picture at this stage.</p>
+      <p>So, we concentrate on following the strict orders we're given in order to complete single, simple tasks.</p>
+      <p>Hopefully, we learn quickly, and don't stay in this stage for long.</p>
+    </aside>
+  </section>
+
+  <section id="dreyfus-advanced-beginner" style="height: 64.5%">
+    <h2>Dreyfus Model of Skill Acquisition</h2>
+
+    <ol class="bullet-list" style="width: 35.725%;">
+      <li>Novice</li>
+      <li>Advanced Beginner</li>
+    </ol>
+
+    <aside class="notes">
+      <p>In the advanced beginner stage, instead of being explicitly directed how to complete each atomic task, we are given slightly more ambiguous directions.</p>
+      <p>But, our overall view of the big picture is still limited.</p>
+      <p>We have no way of prioritizing our tasks, so we treat everything as having the same importance.</p>
+    </aside>
+  </section>
+
+  <section id="dreyfus-competence" style="height: 64.5%">
+    <h2>Dreyfus Model of Skill Acquisition</h2>
+
+    <ol class="bullet-list" style="width: 35.725%;">
+      <li>Novice</li>
+      <li>Advanced Beginner</li>
+      <li>Competence</li>
+    </ol>
+
+    <aside class="notes">
+      <p>If we continue progressing, we eventually become competent. Whee!</p>
+      <p>Competent practitioners can multitask.</p>
+      <p>We start to be able to understand long-term goals and see the impact our actions have on them.</p>
+      <p>This allows us to prioritize our tasks.</p>
+      <p>We start to take responsibility for our own actions, and begin building our own repertoire of standard procedures.</p>
+    </aside>
+  </section>
+
+  <section id="dreyfus-proficient" style="height: 64.5%">
+    <h2>Dreyfus Model of Skill Acquisition</h2>
+
+    <ol class="bullet-list" style="width: 35.725%;">
+      <li>Novice</li>
+      <li>Advanced Beginner</li>
+      <li>Competence</li>
+      <li>Proficient</li>
+    </ol>
+
+    <aside class="notes">
+      <p>If we continue to build our expertise, we start ro really see the big picture - not just of what we're working on, but how it interacts with everything else.</p>
+      <p>We treat each problem on a case-by-case basis, recognizing the important aspects and how it may or may not deviate from whatever is normal.</p>
+      <p>At this stage of proficiency, we being to apply our previous successful experiences directly onto new experiences.</p>
+      <p>When we apply these previous successes at this stage, our decision-making becomes easier, and we being to anticipate outcomes.</p>
+    </aside>
+  </section>
+
+  <section id="dreyfus-expert" style="height: 64.5;">
+    <h2>Dreyfus Model of Skill Acquisition</h2>
+
+    <ol class="bullet-list" style="width: 35.725%;">
+      <li>Novice</li>
+      <li>Advanced Beginner</li>
+      <li>Competence</li>
+      <li>Proficient</li>
+      <li>Expert</li>
+    </ol>
+
+    <aside class="notes">
+      <p>Finally, if we reach the expert stage - and few of us do - then we react automatically and without hesitation in most situations.</p>
+      <p>We have a deep understanding of our work and its associated problems.</p>
+      <p>We only need to think about what we're doing when we face a truly new situation or run into a roadblock.</p>
+      <p>Dreyfus says, "An expert's skill has become so much a part of him that he need be no more aware of it than he is of his own body."</p>
+      <p>We can see the matrix. We have a vision of what's possible within our domain.</p>
+    </aside>
+  </section>
+
+  <section id="great" data-state="great" style="height: 100%;">
+    <small><a href="http://www.flickr.com/photos/62337512@N00/3958637561/">thumbs up</a> by anthony kelly <a href="http://creativecommons.org/licenses/by-nc/2.0/">Attribution-NonCommercial License</a></small>
+    <aside class="notes">
+      <p>Great! We have a well-defined path to experthood.</p>
+      <p>We just need to walk it!</p>
+      <p>Alright, well, how?</p>
+    </aside>
+  </section>
+
+  <section id="no-guarantee">
+    <blockquote>
+      The problem is not how to turn novices into experts faster or with less work. The problem is how to ensure that novices develop into experts rather than into experienced nonexperts. <a href="#/references-1">[1]</a>
+    </blockquote>
+
+    <aside class="notes">
+      <p>The first thing we have to realize is that there's no guarantee we're going to make it all the way to the expert level.</p>
+      <p>That's why there are so few true experts out there.</p>
+      <p>Think of all the people you know - in any line of work - that have been practicing for years, but seem to be stuck at some median skill level.</p>
+      <p>It's a really common situation.</p>
+      <p>We're not trying to speed up this process where novices are going to become experts anyway.</p>
+      <p>Our goal is actually to lead our teams to expertise, instead of the much more likely scenario of having done something for a very long time, but still not being very good at it.</p>
+      <p>The Skill Acquisition Model is a good start, but it doesn't give us the whole picture.</p>
+      <p>If you're like most people, you might have come in here thinking that expertise was measured in knowledge about a topic.</p>
+      <p>You can't really be blamed for that.</p>
+      <p>This idea that an expert is just a repository of knowledge has its roots in the positivist philosophy of science. *CLICK*</p>
+    </aside>
+  </section>
+
+  <section id="positivism">
+    <h2>Positivism</h2>
+
+    <aside class="notes">
+      <p>Positivist philosophy came out of the Enlightenment, and suggests that any action or behavior, including human thought and action, can be ultimately boiled down and explained by rules, logic, math, and physics.</p>
+    </aside>
+  </section>
+
+  <section id="equations" style="height:100%;" data-state="equations">
+    <small><a href="http://www.flickr.com/photos/jurvetson/128239619/">Frozen Brainstorm</a> by Steve Jurvetson <a href="http://creativecommons.org/licenses/by-nc/2.0/">Attribution-NonCommercial License</a></small>
+    <aside class="notes">
+      <p>This philosophy directly led to the great hope in the early 20th century that we'd have Artificial Intelligence completely solved by the time we landed someone on the moon.</p>
+    </aside>
+  </section>
+
+  <section id="ai" data-state="robot">
+    <img src="/images/robot.jpg" alt="Robot"/>
+    <aside class="notes">
+      <p>But it turns out that intelligence is really hard, because you can't just feed a bunch of rules and algorithms into a computer to have it make good decisions.</p>
+      <p>That makes sense to us now, but the problem is that we've been trying to do the same thing in teaching <strong>PEOPLE</strong> for the last hundred years.</p>
+    </aside>
+  </section>
+
+  <section id="people">
+    <img src="/images/baby.jpg" alt="Baby"/>
+    <aside class="notes">
+      <p>So what researchers have come to realize just in the last few decades is that being an expert isn't just knowing a lot about something.</p>
+      <p>When we pump somebody's head full of facts and rules, we're feeding them <em>declarative</em> knowledge, which - don't get me wrong - is a useful basis for expertise.</p>
+      <p>This is what we turn to whenever we actually have to think about what we're doing.</p>
+      <p>The problem is that this is theoretical knowledge.</p>
+      <p>What we really need is the know-how to apply it practically.</p>
+      <p>Which makes this a supremely unhelpful response:</p>
+    </aside>
+  </section>
+
+  <section id="rtfm">
+    <h2>RTFM</h2>
+
+    <aside class="notes">
+      <p>There are many things we can only learn how to do through practice.</p>
+      <p>Let's look at one of these.</p>
+    </aside>
+  </section>
+
+  <section id="prototypal-inheritance">
+    <h2>Prototypal Inheritance</h2>
+
+    <aside class="notes">
+      <p>A show of hands: how many people here have read an article, blog post, or book chapter on prototypal inheritance?</p>
+      <p>How many people got to the end and said, "I completely understand this" without ever laying a finger on the keyboard?</p>
+      <p>If you did, then you're way smarter than I am. What are you doing here? Go cure cancer or something.</p>
+      <p>Most normal humans cannot grasp the what, how, and why of prototypal inheritance</p>
+      <p>or CSS layouts</p>
+      <p>or Git</p>
+      <p>or MVC architecture</p>
+      <p>or pretty much anything else we do on a daily basis just by reading about them.</p>
+      <p>But if expertise isn't knowledge, then what is it?</p>
+    </aside>
+  </section>
+
+  <section id="retrieval">
+    <h2>Procedural Memory</h2>
+
+    <aside class="notes">
+      <p>There's this thing called "procedural memory."</p>
+      <p>The idea has been around since the early 1800s, but it wasn't until the last half of the 20th century that it was generally recognized as an integral part of skill acquisition and expertise.</p>
+      <p>When we humans do anything, some memory of that is stored in our subconscious.</p>
+      <p>When we go to repeat an action we have stored in this subconscious procedural memory, we don't have to think about it.</p>
+      <p>Like tying your shoes or signing your name.</p>
+      <p>Over time, the abilities we can unconsciously reproduce grow in both number and complexity.</p>
+      <p>Over even more time, we can apply this procedural memory to new, seemingly unrelated problems.</p>
+      <p>At this point people start calling it "intuition" or "magic," and we say, "Yeah. That's right."</p>
+      <p>But how does procedural memory help the problem-solver?</p>
+      <p>It turns out that the average human can only keep somewhere around four things actively in mind at the same time.</p>
+    </aside>
+  </section>
+
+  <section id="threads" style="height:100%;">
+    <img src="/images/brain.png" alt="Brain"/>
+    <small><a href="http://kanasta1975.deviantart.com/art/Brain-281932062">Brain</a> by =kanasta1975 <a href="http://creativecommons.org/licenses/by-nc-nd/3.0/">Attribution-NonCommercial-NoDerivs 3.0 Unported</a></small>
+    <aside class="notes">
+      <p>Anything we can store in our procedural memory can be applied automatically.</p>
+      <p>We don't even have to think about it.</p>
+      <p>This frees up our precious brain-threads and allows us to tackle problems at more complex levels.</p>
+      <p>Because we're able to look at a problem and immediately pattern-match away the stuff we already know - eliminating the noise like with those secret decoder glasses.</p>
+    </aside>
+  </section>
+
+  <section id="patterns">
+    <img src="images/decoder.jpg" alt="Decoder Glasses"/>
+
+    <aside class="notes">
+      <p>What we're left with is the difficult part (for us) of the problem to solve.
+      <p>We can then leverage our book-learning against this remainder.</p>
+      <p>I call this "reinvesting your cognitive dividends."</p>
+      <p>The cool thing is that this characterizes ALL learning.</p>
+      <p>It turns out that the people we call "experts" just have a larger repository of this kind of information.
+      <p>This means they are able to eliminate larger parts of the problem at a glance.
+      <p>This frees them up to concentrate on parts of the problem a less-expert practitioner wouldn't even be able to approach yet.</p>
+      <p>This is why the Novice and the Advanced Beginner <em>have to</em> work on simpler problems under a lot of direction.</p>
+      <p>Their "repertoire" hasn't grown to the point where they can take on more complex problems.</p>
+    </aside>
+  </section>
+
+  <section id="reflection-in-action">
+    <h2>Reflection-in-Action</h2>
+
+    <div>
+      <img src="/images/reflective-practitioner.jpg" alt="Reflective Practitioner: Cover Image" style="max-height: 62%" />
+    </div>
+
+    <aside class="notes">
+      <p>Donald Schön, a professor and specialist in organizational learning at MIT for nearly 30 years called this process of pattern-matching "Knowing-in-Action".</p>
+      <p>He went on to suggest that the expert followed this up with a process of "Reflection-in-Action" where they critically reflect on their intuitions, testing their validity in the current context.</p>
+      <p>This is important for both the initial development of as well as continuous improvement in a skill.</p>
+      <p>In other words, he suggests that this is how one makes their way up Dreyfus's skill acquisition ladder.</p>
+      <p>So why doesn't everybody make their way to the top of their profession?</p>
+      <p>Let's take a look at a few things that observational research has shown experts and non-experts do differently.</p>
+    </aside>
+  </section>
+
+  <section id="what-do-experts-do">
+    <blockquote>
+      ...in order to be experts, people must choose to address the problems of their field at the upper limit of the complexity they can handle... For it is through such working at the upper edge that people develop the deep knowledge that makes expert performance possible <a href="#/references-1">[1]</a>.
+    </blockquote>
+
+    <aside class="notes">
+      <p>Experts, we find, like new challenges</p>
+      <p>They actively seek out learning opportunities.</p>
+      <p>They tend to take on problems that increase their expertise.</p>
+      <p>They regard everything as an opportunity to learn something.</p>
+      <p>New information that contradicts their mental model leads them to challenge their previous conceptions.</p>
+    </aside>
+
+  </section>
+
+  <section id="what-do-nonexperts-do" data-state="bored" style="height:100%;">
+    <small><a href="http://www.flickr.com/photos/jope1978/3969662362/">Aburrido / Bored</a> by Leandro Suarez <a href="http://creativecommons.org/licenses/by-nc-nd/2.0/">Attribution-NonCommercial-NoDerivs License</a></small>
+    <aside class="notes">
+      <p>On the other hand, experienced non-experts -- those who are stuck in their progression -- are more concerned about doing the "right" thing.</p>
+      <p>Or perhaps more accurately, they are concerned about not doing the wrong thing.</p>
+      <p>They fear screwing up and what it means for their job or reputation, so they are less likely to take chances in an effort to expand their expertise.</p>
+      <p>They are more likely to only take on problems where they don't have to try very hard.</p>
+      <p>When presented with new conflicting information, the nonexpert tends to make a best-fit match against their previous experience and disregard information that disrupts their worldview.</p>
+      <p>But why do people develop in these two different ways?</p>
+      <p>Why is one person an expertise-seeker, and another complacent?</p>
+      <p>Yes, people have different innate levels of intelligence and capacity to learn.</p>
+      <p>However, in most disciplines -- and I'd argue that software development is, in fact, one of those -- the intellect required to do well is well within reach of most adult humans.</p>
+      <p>Research into IQ has shown that beyond a base level required to do a job, higher IQ doesn't translate into better performance.</p>
+      <p>So if most people are smart enough to program - or at least those pursuing it as a career have the minimum ability required, then the differentiator we're left with is the motivation to excel.</p>
+    </aside>
+  </section>
+
+  <section id="motivation">
+    <h2>Motivation</h2>
+
+    <aside class="notes">
+      <p>What motivates us to become experts?</p>
+    </aside>
+  </section>
+
+  <section id="surpassing-ourselves">
+    <h2>Causes of Motivation</h2>
+
+    <img src="/images/surpassing-ourselves.jpg" alt="Surpassing Ourselves: Cover" style="max-height: 62%"/>
+
+    <aside class="notes">
+      <p>In the book Surpassing Ourselves, Carl Bereiter and Marlene Scardamalia found three factors that motivate individuals build their expertise:</p>
+      <p>As an aside, if you're going to read one book on the subject of expertise, I recommend this one.</p>
+    </aside>
+  </section>
+
+  <section id="causes-of-motivation">
+    <h2>Causes of Motivation</h2>
+
+    <ul class="bullet-list">
+      <li>Flow</li>
+      <li>Expert Subcultures</li>
+      <li>Heroic Element</li>
+    </ul>
+
+    <aside class="notes">
+      <p>The three factors they identify are flow, expert subcultures, and an heroic element.</p>
+    </aside>
+  </section>
+
+  <section id="flow">
+    <h2>Flow</h2>
+
+    <aside class="notes">
+      <p>The first thing they found motivates people is flow. You might think of it as being "in The Zone".</p>
+      <p>It's this state of total absorption, total control, and loss of self-consciousness, where everything is in harmony, negative thinking and self-doubts are absent, and performance reaches its peak.</p>
+      <p>Musicians get it, athletes get it, chess players, surgeons, and rock climbers get it, and it seems that anyone working at their capacity in their chosen skill can get it.</p>
+      <p>Some psychologists think that this is what we feel when we're getting the most enjoyment out of what we're doing.</p>
+      <p>When we chase after the flow state, we're just trying to maximize our enjoyment of an activity.</p>
+      <p>To over-simplify, we're motivated to do things because we enjoy them.</p>
+      <p>On the flip side, if we don't enjoy doing something, it's highly unlikely we'll become expert at it.</p>
+      <p>Now, different people chase after this state to different degrees, but the euphoria this state brings can be like a drug.</p>
+      <p>The problem is that as we become accustomed to certain activities, we have to increase the complexity by developing new skills or taking on new problems.</p>
+      <p>Flow state requires working at the edge of one's competence -- right on that precipice between success and failure.</p>
+      <p>We have to get better. We MUST get better.</p>
+    </aside>
+  </section>
+
+  <section id="expert-subcultures">
+    <h2>Expert Subcultures</h2>
+
+    <aside class="notes">
+      <p>Bereiter and Scardamalia also talk about this idea of expert subcultures as another motivating factor for advancement.</p>
+      <p>In many fields, there is this subculture that embodies the ideals and goals of expert development.</p>
+      <p>It can be formal like a professional association or informal like a Meetup group or, hopefully, the team you work with in your office every day.</p>
+      <p>This expert subculture often offers help and cooperation toward success, as well as providing recognition of accomplishments from one's peers.</p>
+      <p>Entry into an expert subculture often involves participation in pursuing group ideals or projects, which can be challenging.</p>
+      <p>If nothing else, as group members improve their individual competence, it ups the ante for other group members.</p>
+      <p>As long as the group is a cooperative one, this has the effect of bringing everyone up faster.</p>
+    </aside>
+  </section>
+
+  <section id="heroic-element">
+    <h2>The Heroic Element</h2>
+
+    <aside class="notes">
+      <p>And then there are those who people -- and perhaps more in this industry than in some others -- who are motivated solely by an innate heroism.</p>
+      <p>These people have no expert community to help them grow, and may or may not be enticed to learn by some feeling of enjoyment through flow.</p>
+      <p>But, they have the discipline to sit down and force themselves to climb the ladder of expertise alone.</p>
+
+      <p>Now I'd venture to suggest that every JavaScript developer has exhibited symptoms of this during at least <em>some</em> point in their career.</p>
+      <p>Most development jobs require a minimum level of knowledge, and most JavaScript developers have to teach it to themselves.</p>
+    </aside>
+  </section>
+
+  <section id="dont-be-a-hero">
+    <h2>Don't Be a Hero</h2>
+    <blockquote>Picking up a practice on one's own has the advantage of freedom--freedom to experiment without the constraints of received views. But it also has the disadvantage of requiring each student to reinvent the wheel, gaining little or nothing from the accumulated experience of others [7].</blockquote>
+
+    <aside class="notes">
+      <p>But as an aside: my personal advice is "Don't be a hero." Find a good group of like-minded people somewhere somehow and align with them.</p>
+      <p>Even if you're just starting out, join a Meetup group and find people willing to help you grow. They're out there.</p>
+      <p>You'll probably grow much faster than you would alone.</p>
+    </aside>
+  </section>
+
+  <section id="motivation-summary">
+    <h2>Motivation</h2>
+
+    <aside class="notes">
+      <p>This idea that motivation is the big decider between experts and nonexperts is why I advocate hiring for passion above almost all else.</p>
+      <p>If putting in the tons of practice is what it takes to be an expert, and if motivation why someone would actually do that, then I need to see that motivation.</p>
+      <p>If someone is truly passionate about a subject, they will have the drive to achieve the upper limits of expertise in that subject.</p>
+      <p>If not, they are likely destined to become "merely competent."</p>
+      <p>Of course, there are other extenuating factors, but I have found over the years that passion is a remarkably good predictor of success.</p>
+    </aside>
+  </section>
+
+  <section>
+    <h2>Building Expertise</h2>
+    <aside class="notes">
+      <p>Now that we have defined expertise, we can talk about how to go about getting it - or more to the point of this talk: help others around us get it, too.</p>
+    </aside>
+  </section>
+
+  <section id="warning">
+    <h2>DANGER WILL ROBINSON</h2>
+
+    <aside class="notes">
+      <p>But first a word of warning: </p>
+    </aside>
+  </section>
+
+  <section id="danger">
+    <blockquote>
+      Expertise in a particular domain does not guarantee that one is good at helping others learn it. In fact, expertise can sometimes hurt teaching because many experts forget what is easy and what is difficult for students [5].
+    </blockquote>
+
+    <aside class="notes">
+      <p>We've been talking about expertise and how much time and effort it takes to gain it in a particular set of skills.</p>
+      <p>Being an expert developer does NOT make somebody an expert teacher.</p>
+      <p>This should seem obvious now, but it's a mistake we make all the time.</p>
+      <p>But hopefully you're here because you realize that you're not expert teachers (just as I'm not), and are looking for some advice.</p>
+      <p>And if you are an expert teacher. Please be gentle in the Q&A.</p>
+      <p>Here are some things from what I've read and experienced to help us build our teaching expertise:</p>
+    </aside>
+  </section>
+
+  <section>
+    <h2>How People Learn</h2>
+
+    <aside class="notes">
+      <p>If you've looked into anything about teaching, you've probably found that different people learn in different ways.</p>
+      <p>There's this idea that some people are visual learners, some people are auditory, and some are kinesthetic.</p>
+      <p>We're not going to spend a lot of time digging into the specifics of how people learn, but I'll mention a few ways we can engage people no matter their preferred way of learning.</p>
+    </aside>
+  </section>
+
+  <section id="previous-experience">
+    <h2>Teach From Previous Experience</h2>
+
+    <aside class="notes">
+      <p>One of the best things we can do for a student is to leverage their past experiences in the new domain.</p>
+      <p>What I mean is take something they understand very well that they have somehow picked up in their past, and use it as a basis for new learning.</p>
+      <p>This accomplishes two things:</p>
+      <p>First, when we build metaphors from experience and knowledge the student already has, it makes the new knowledge more concrete.</p>
+      <p>Secondly, we're interested in ultimately transferring this knowledge into practice in order to build expertise.</p>
+      <p>Knowledge transfer is a skill in itself.</p>
+      <p>When we create metaphors that transfer the student's existing knowledge into the new domain, we provide an implicit example of this same type of knowledge transfer.</p>
+      <p>Now, this is necessarily very individualized type of instruction.</p>
+      <p>As you find individuals on your team who don't seem to be progressing as fast, perhaps it would make sense to talk about things they are familiar with or excited about completely outside of programming.
+      <p>Find an applicable metaphor to help them understand development concepts.</p>
+    </aside>
+  </section>
+
+  <section id="visible-thinking">
+    <h2>Make Thinking Visible</h2>
+
+    <aside class="notes">
+      <p>Another useful thing we can provide for learners is to make their thinking visible.</p>
+      <p>What does that mean?</p>
+      <p>Sometimes, even when we make all of these metaphors and go the extra mile to explain something, the student still doesn't really get it.</p>
+      <p>So, if we can make their thinking visible - ask them to reason our their solutions out loud, it makes any faulty conceptions or assumptions incredibly apparent.</p>
+      <p>We can then use this as a new starting point for helping the student re-conceptualize the concept, possibly by adjusting or abandoning our metaphor.</p>
+    </aside>
+  </section>
+
+  <section id="logical-creative">
+    <h2>Engage Both Sides of the Brain</h2>
+
+    <aside class="notes">
+      <p>It's very likely that at some point in your life, you've heard someone say that they were "left" or "right" brained.</p>
+      <p>I can never remember which is which, but the idea is that we have both a logical and a creative side to our consciousness.
+      <p>By extension, this gives us two different ways we can learn.</p>
+      <p>A suggestion, then, is to find ways to engage both sides in the learning process.</p>
+      <p>We can approach the topic to learn first from a logical standpoint, and then again through some sort of creative exercise.</p>
+      <p>I think we're uniquely equipped in software development to do both simultaneously.</p>
+      <p>When we teach programming concepts, we don't have to force our students to build the same boring stuff over and over.</p>
+      <p>Help them take something they're interested in and develop an idea for an application around it.</p>
+      <p>I did this in a previous job with a newly-hired entry level developer.</p>
+      <p>His original task was to build a simple dashboard with tiles that had financial information and popped up a window with a more detailed information on a click.</p>
+      <p>He wasn't that into it, and wasn't really grasping the concepts around what I had asked him to do.</p>
+      <p>So I took a step back and asked him what he was interested in outside of work.</p>
+      <p>He said, "Cars."</p>
+      <p>I said, "What? Working on cars? Racing? What?"</p>
+      <p>He said, "No, just looking at them. Knowing about them."</p>
+      <p>DING DING DING</p>
+      <p>So I asked him instead to build me an application that pulled from a repository of car data that he could compile.</p>
+      <p>This application would then display a simple dashboard with tiles that had pictures and the names of the cars, and when you clicked on one, it would pop up the complete specs.</p>
+      <p>So I was able to do two things here - one, teach from what he already knew - cars, and make it something he was just a little interested in, and allowed him to get a little creative with it.</p>
+      <p>I didn't care what his design was like, and he could do whatever he needed to to keep it interesting.</p>
+      <p>He was able to complete this problem in no time. And once that was done, we were able to sit down and talk about how it paralleled the original task of using financial data.</p>
+      <p>From then on, he surprised me with how quickly he picked up more complicated concepts.</p>
+      <p>Now, I don't tell that story to toot my own horn.</p>
+      <p>This guy was a self-starter, and would have gotten it eventually, but how long would that take if I wasn't flexible?</p>
+      <p>It doesn't benefit the teacher or the learner to not be flexible.</p>
+    </aside>
+  </section>
+
+  <section id="learning-strategies">
+    <h2>Learning Summary</h2>
+
+    <aside class="notes">
+      <p>So, everybody learns in different ways, but if we can draw from their previous experience, engage both the logical and creative sides of the brain, and be flexible, we can help the knowledge stick.</p>
+    </aside>
+  </section>
+
+  <section>
+    <h2>How Expertise is Built</h2>
+
+    <aside class="notes">
+      <p>Now that we have a definition of expertise and some learning strategies, let's talk about building expertise.</p>
+      <p>We'll start with individuals, and move on to teams.</p>
+    </aside>
+  </section>
+
+  <section id="building-experience">
+    <h2>Experience</h2>
+
+    <aside class="notes">
+      <p>As we have seen, experts are experts because they have a wealth of experience from which to draw.</p>
+      <p>This experience allows them to reduce the problem they're facing to a greater degree than non-expert, which frees up more resources to attack the remainder of the problem.</p>
+      <p>So all we need to do is gain experience, right? Just do the work over and over?</p>
+      <p>A casual reading of something like this book (Outliers) and its discussion of how it takes 10,000 hours to master something might lead you to believe that.</p>
+      <p>But this is the path to madness.</p>
+    </aside>
+  </section>
+
+  <section id="progressive-problem-solving">
+    <h2>Progressive Problem Solving</h2>
+
+    <aside class="notes">
+      <p>We can't just solve the same problems over and over again.</p>
+      <p>The problems we solve need to be more and more complex over time.</p>
+      <p>You can't put in 10,000 hours of doing the same thing over an over.</p>
+      <p>I think Outliers actually talks about 10,000 hours of <em>concerted</em> practice, but it kind of gets lost in the message.</p>
+    </aside>
+  </section>
+
+  <section id="mccartney">
+    <blockquote>
+      I think there is a lot of truth in it... I mean there were an awful lot of bands that were out in Hamburg who put in 10,000 hours and didn't make it, so it's not a cast-iron theory. I think, however, when you look at a group who has been successful... I think you always will find that amount of work in the background. But I don't think it's a rule that if you do that amount of work, you're going to be as successful as the Beatles.
+    </blockquote>
+    <aside class="notes">
+      <p>The Beatles were an example of this 10,000 hour theory, and when asked about it, Paul McCartney said:</p>
+      <p>It is only by continuing to work on harder problems - working at the edge of our competence - that we can continue to increase our expertise.</p>
+    </aside>
+  </section>
+
+  <section id="experimentation">
+    <h2>Experimentation</h2>
+
+    <aside class="notes">
+      <p>When we hit the edge of our competence, we don't go in knowing the solution to our problem.</p>
+      <p>In fact, this is how Bereiter and Scardamalia define problem-solving, which I'll paraphrase as: "a nonroutine purposeful activity to achieve a goal which we do not already have a known way of achieving."</p>
+      <p>Interestingly enough, this is almost exactly how Dreyfus defines an experiment: "Any deliberate action undertaken with an end in mind."</p>
+      <p>So, therefore, we can think about problem-solving not as supplying answers we already know, but as experimenting with different solutions in an exploratory way.</p>
+      <p>If we make an experiment, and, taking its consequences as a whole, like the result, then our experiment is affirmed.</p>
+      <p>We can consider the problem solved.</p>
+      <p>If we don't like the result, our experiment is negated, and we try something else.</p>
+      <p>Either way, we've added a formative experience to our repertoire.</p>
+    </aside>
+  </section>
+
+  <section id="building-summary">
+    <h2>Summary</h2>
+
+    <aside class="notes">
+      <p>So an individual builds expertise by adding to our procedural repertoires through progressively solving problems in an experimental manner.</p>
+      <p>But how do we encourage expertise building in teams?</p>
+    </aside>
+  </section>
+
+  <section>
+    <h2>Building Expertise in Teams</h2>
+
+    <aside class="notes">
+      <p>There is a whole realm of research around organizational learning.</p>
+      <p>We're not going to get into all of that, but we'll take a look at just a few things an organization must do in order to effectively support collective learning:</p>
+      <p>If you're interested in digging into the literature, I have plenty of references for you at the end.</p>
+    </aside>
+  </section>
+
+  <section id="atmosphere-of-cooperation">
+    <h2>Create an Atmosphere of Cooperation</h2>
+
+    <aside class="notes">
+      <p>There is some debate over whether a competitive atmosphere is helpful or harmful for learning.</p>
+      <p>Some of the research we've seen in the last twenty years seems to show that while competition can be helpful for some types of learners, in general a cooperative atmosphere is superior for group learning.</p>
+      <p>In a cooperative atmosphere, individuals are encouraged to contribute their particular strengths to the community.</p>
+    </aside>
+  </section>
+  <section id="zone-of-proximal-development">
+    <h2>Zone of Proximal Development</h2>
+    <aside class="notes">
+      <p>The Soviet psychologist Lev Vygotsky proposed this idea of the zone of proximal development.</p>
+      <p>ZPD basically says that there is an area of practice between what an individual can do without any help and they can't do with all of the help in the world.</p>
+      <p>As the individual tackles problems within this zone, they require some assistance from someone who knows more about the particular issue than them.</p>
+      <p>As they solve these problems with assistance, their expertise increases.</p>
+      <p>They can then solve more problems independently, and their zone of proximal development moves outward.</p>
+      <p>A cooperative environment allows several people to work within their zone at once, constantly changing roles between learner and coach.</p>
+    </aside>
+  </section>
+
+  <section id="questions-and-mistakes">
+    <h2>Allow Questions and Mistakes</h2>
+
+    <aside class="notes">
+      <p>Another book I highly recommend -- How People Learn -- describes classroom situations where an unwritten rule pervades the environment: Never get caught making a mistake or not knowing an answer.</p>
+      <p>This norm can keeps students from asking questions when they do not understand the material or to explore new questions and hypotheses.</p>
+      <p>This is also true of development teams.</p>
+      <p>Interviews of a large number of professionals in the UK stressed the point that working in a situation where it had been easy to ask questions, without feeling embarrassed, had been of considerable benefit.</p>
+      <p>We WANT people to ask questions when they don't understand. We WANT people to explore groundbreaking new questions and attempt to prove new hypotheses.</p>
+      <p>As we've already covered, THIS IS HOW EXPERTISE IS BUILT.</p>
+    </aside>
+  </section>
+
+  <section id="ability-to-fail">
+    <h2>Able to Fail?</h2>
+
+    <aside class="notes">
+      <p>Unfortunately, the reality of business is that there are very few opportunities for someone to just sit and learn.</p>
+      <p>Even more important, there is an understandable reluctance to let a novice run wild on live project work where there's money involved.</p>
+      <p>But we need to find ways to give people the ability to fail.</p>
+      <p>Whether it's working on internal projects for a while, or being closely supervised on "real" work, the ability to experiment and see what happens is integral to skill development.</p>
+    </aside>
+  </section>
+
+  <section id="teaching">
+    <h2>Teaching</h2>
+
+    <aside class="notes">
+      <p>So now that we have gotten our environment right, we can get up and start teaching these people JavaScript, right?</p>
+      <p>NO!</p>
+      <p>Lecturing people is a terrible way to teach.</p>
+      <p>When we get up and teach a class - even if it's a hands-on session - if our students can walk out the door retaining three major concepts, then we feel like we've done a good job.</p>
+      <p>And listen to this: The psychologist Carl Rogers after lecturing for 30 years said:</p>
+      <p>My experience has been that I cannot teach another person how to teach. To attempt it is for me, in the long run, futile.</p>
+      <p>It seems to me that anything that can be taught to another is relatively inconsequential and has little or no significant influence on behavior. That sounds so ridiculous that I can't help but question it at the same time I present it.</p>
+      <p>I realize increasingly that I am only interested in learnings which significantly influence behavior. Quite possibly this is simply a personal idiosyncrasy.</p>
+      <p>I have come to feel that only learning which significantly influences behavior is self-discovered, self-appropriated learning.</p>
+      <p>Such self-discovered learning, truth that has been personally appropriated and assimilated in experience, cannot be directly communicated to another. As soon as an individual tries to communicate such experience directly, often with a quite natural enthusiasm, it becomes teaching, and its results are inconsequential. It was some relief recently that Soren Kierkegaard, the Danis philosopher, has found this, too, in his own experience, and stated it very clearly a century ago. It made it seem less absurd.</p>
+      <p>As a consequence of the above, I realize that I have lost interest in being a teacher.</p>
+      <p>When I try to teach, as I do sometimes, I am appalled by the results, which seem a little more than inconsequential, because sometimes the teaching appears to succeed. When this happens, I find that the results are damaging. It seems to cause the individual to distrust his own experience and to stifle significant learning. Hence I have come to feel that the outcomes of teaching are either unimportant or hurtful.</p>
+      <p>When I look back at the results of my past teaching, the real results seem the same--either damage was done, or nothing significant occurred. This is frankly troubling.</p>
+    </aside>
+  </section>
+
+  <section id="what">
+    <h2>WHAT!?</h2>
+  </section>
+
+  <section id="solution">
+    <h2>Teaching</h2>
+
+    <aside class="notes">
+      <p>As a consequence, I realize that I am only interested in being a learner, preferably learning things that matter, that have some significant influence on my own behavior.</p>
+      <p>I find it very rewarding to learn, in groups, in relationship with one person as in therapy, or by myself.</p>
+      <p>I find that one of the best, but most difficult ways for me to learn is to drop my own defensiveness, at least temporarily, and to try to understand the way in which this experience seems and feels to the other person.</p>
+      <p>I find that another way of learning for me is to state my own uncertainties, to try to clarify my puzzlement, and thus get closer to the meaning that my experience actually seems to have.</p>
+      <p>The whole train of experiencing, and the meanings that I have thus far discovered in it, seem to have launched me on a process which is both fascinating and at times a little frightening. It seems to mean letting my experience carry me on, in a direction which appears to be forward, toward that I can but dimly define, as I track to understand at least the current meaning of that experience. The sensation is that of floating with a complex stream of experience, with the fascinating possibility of trying to comprehend its ever-changing reality.</p>
+      <p>What is Rogers describing here?</p>
+    </aside>
+  </section>
+
+  <section id="coaching">
+    <h2>Coaching</h2>
+    <aside class="notes">
+      <p>In professional development circles today, we'd call this coaching.</p>
+      <p>This is the way people can really learn: a joint exploration of a topic between instructor and learner where both are interested in figuring out the result.</p>
+      <p>In our realm, this can be pair programming, whiteboarding sessions, code reviews, or preferably all of that and more.</p>
+    </aside>
+  </section>
+
+  <section id="model">
+    <h2>A Model?</h2>
+    <aside class="notes">
+      <p>"But Bob," you say. "This is crazy talk. This isn't the way it's done. We just send our people to you for a day-long training, and you make them good, capeche?"</p>
+      <p>Ah, but there is a model for this. It's one that Schön advocated EVERY discipline follow since the 1970s.</p>
+      <p>But let's first get one thing straight.</p>
+    </aside>
+  </section>
+
+  <section id="design-practice">
+    <h2>Software Development is a Design Practice</h2>
+
+    <aside class="notes">
+      <p>As much as we like to talk about the tech stuff in software development, actually building applications requires a design mentality.</p>
+      <p>That's why we use terms like software <em>architecture</em> and application <em>design</em>.</p>
+      <p>So if it's a design practice, why don't we just teach it like one?</p>
+      <p>Schön has a lot to say on this:</p>
+    </aside>
+  </section>
+
+  <section>
+    <h2>The Software Design Practicum</h2>
+
+    <aside class="notes">
+      <p>Designing...must be learned by doing. However much students may learn about designing from lectures or readings, there is a substantial component of design competence--indeed, the heart of it--that they cannot learn in this way.</p>
+      <p>The paradox of learning a really new competence is this: that a student cannot at first understand what he needs to learn, can learn it only by educating himself, and can educate himself only by beginning to do what he does not yet understand.</p>
+      <p>Students learn by practicing the making or performing at which they seek to become adept, and they are helped to do so by senior practitioners.</p>
+      <p>the student must begin to design before she knows what she is doing, so that the studio master's demonstrations and descriptions can take on meanings useful to her further designing. But this "virtuous circle" depends on the capacity of student and studio master to communicate effectively with each other, in spite of the potential for vagueness, ambiguity, or obscurity inherent in the things about which they try to communicate.</p>
+      <p>The student cannot be taught what he needs to know, but he can be coached: "He has to see on his own behalf and in his own way the relations between means and methods employed and results achieved. Nobody else can see for him, and he can't see just by being 'told,' although the right kind of telling may guide his seeing and thus help him see what he needs to see" (Dewey, 1974, p. 151).</p>
+      <p>Perhaps, then, learning all forms of professional artistry depends, at least in part, on conditions similar to those created in the studios and conservatories: freedom to learn by doing in a setting relatively low in risk, with access to coaches who initiate students into the "traditions of the calling" and help them, by "the right kind of telling," to see on their own behalf and in their own way what they need most to see.</p>
+      <p>A practicum is a setting designed for the task of learning a practice. In a context that approximates a practice world, students learn by doing, although their doing usually falls short of real-world work. They learn by undertaking projects that simulate and simplify practice; or they take on real-world projects under close supervision.</p>
+      <p>Most practicums involve groups of students who are often as important to one another as the coach. Sometimes they play the coach's role.</p>
+
+    </aside>
+  </section>
+
+  <section id="results">
+    <h2>The Answer</h2>
+
+    <aside class="notes">
+      <p>And this, my friends, in my mind is the answer.</p>
+      <p>The most successful training of a team I have ever been a part of went like this (and I can't even take credit for the idea):</p>
+    </aside>
+  </section>
+
+  <section id="prototypal">
+    <h2>Teaching Prototypal Inheritance</h2>
+
+    <aside class="notes">
+      <p>Our team had a weekly-ish hour long JavaScript class intended to help what were formerly HTML and CSS-only developers come up to speed on JS.</p>
+      <p>We devoted yet another session to describing and talking about prototypal inheritance.</p>
+      <p>But THIS time, we had an exercise prepared for everyone: build a constructor for a pop-up modal.</p>
+      <p>Then, build constructors that extend this base modal object to create a video modal, an image modal, or a form modal (or something like that).</p>
+      <p>The team could use this as a downtime project - whenever they rolled off of a project or got bored at home, they could work on it.</p>
+      <p>They were free to take as long as they needed, use whatever resources they wanted, and share suggestions and discussion amongst themselves.</p>
+      <p>They could also ask the other "instructor" and I for help.</p>
+      <p>As each person completed the project, we would sit down as a team and code-review it.</p>
+    </aside>
+  </section>
+
+  <section id="gangbusters">
+    <h2>Gangbusters</h2>
+
+    <aside class="notes">
+      <p>This worked like gangbusters.</p>
+      <p>Not only was the team excited to do this, they were excited to see how everybody else approached the problem.</p>
+      <p>Perhaps unsurprisingly, they seemed to complete it in order of their apparent current expertise.</p>
+      <p>This was cool, because the more confident team members were code reviewed first.</p>
+      <p>This eased the way for the less-confident members to see that it wasn't so bad, but to also allowed them to receive help from these more advanced developers.</p>
+      <p>It was awesome (and also not my idea - did I mention that?)</p>
+    </aside>
+  </section>
+
+  <section id="and-so">
+    <aside class="notes">
+      <p>And so, what am I suggesting here?</p>
+    </aside>
+  </section>
+
+  <section id="school" data-state="school" style="height: 100%;">
+
+    <small style="color: #fff; position: fixed; bottom: 0; display:block; text-shadow: 0 0 10px #000000; filter: dropshadow(color=#000000, offx=0, offy=0);">By en:User:Merrykisses (Uploaded to en: October 9 2006) [Public domain], <a href="http://commons.wikimedia.org/wiki/File%3AHatley_Castle_front_entrance_Aug_2006.jpg" style="color:#fff;text-decoration:underline;">via Wikimedia Commons</a></small>
+
+    <aside class="notes">
+      <p>I propose a school for gifted youngsters.</p>
+      <p>Well not really.</p>
+      <p>Sort of.</p>
+      <p>Not really.</p>
+      <p>But the harsh reality is that our universities on the whole aren't doing this for us.</p>
+      <p>It's up to us to set our teams up as a design practice.</p>
+      <p>We need to integrate structured coaching into our daily process.</p>
+      <p>This coach doesn't necessarily need to be an expert teacher, but an expert learner.</p>
+      <p>The coach needs to be a person just as interested in learning as (if not more so than) the student.</p>
+    </aside>
+
+  </section>
+
+  <section id="santiago-ortiz">
+    <blockquote class="twitter-tweet"><p>when your kids look at the world with curiosity and amazement, your mirror neurons do their job and it's like you are equally fascinated</p>&mdash; Santiago Ortiz (@moebio) <a href="https://twitter.com/moebio/status/342187548296224768">June 5, 2013</a></blockquote>
+    <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+    <aside class="notes">
+      <p>As I was preparing this presentation, I saw Santiago Ortiz, who was one of the speakers at the OpenVis Conf last month in Boston tweet this.</p>
+      <p>When it goes well, coaching has this feeling of euphoria just like the flow states we talked about.</p>
+      <p>As you see someone come to grasp a particularly difficult concept, you're often transported back to when you first had your ah-ha moment.</p>
+      <p>To be able to see it again through someone else's eyes is something special and magical.</p>
+    </aside>
+  </section>
+
+  <section>
+    <h2>Conclusion</h2>
+
+    <aside class="notes">
+      <p>So to summarize, becoming an expert at something is a long process requiring progressive problem-solving at the edge of one's competence.</p>
+      <p>We can aid this within teams by creating a cooperative atmosphere in which failure is an option and the learner is guided to discover how the practice of software design as a whole works.</p>
+      <p>But before I wrap up, I promised to talk about ways for the up-and-coming developers in the crowd, to help themselves grow.</p>
+    </aside>
+  </section>
+
+  <section>
+    <h2>What Can I Do For Myself?</h2>
+
+    <aside class="note">
+      <p>Hopefully as we've gone along, you've found a few things that you have found helpful. Just to make sure we've got all our bases covered, here are a few more:</p>
+    </aside>
+  </section>
+
+  <section>
+    <h2>Trainings</h2>
+
+    <aside class="notes">
+      <p>Trainings. Find them. Take them.</p>
+      <p>We talked about the problem of knowledge retention from trainings, but if you're committed, you can always learn something new.</p>
+      <p>A lot of times when you take a training, the first part seems remedial, the middle part is about at your level, and the end is a bit over your head.</p>
+      <p>This is largely intentional, and is a good sign that you are in the target demographic!</p>
+      <p>At Bocoup, we like to end trainings with a bit of wizardry, not to make you feel dumb, but to show the possibilities and things to aim for in your own practice.</p>
+      <p>Trainings to some extent should be inspirational and make you feel aspirational.</p>
+      <p>If you can't find worthy trainings in your hometown, find them online. Bocoup offers online trainings as do appendTo and other companies I am sure I'm unaware of.</p>
+    </aside>
+  </section>
+
+  <section>
+    <h2>Conferences</h2>
+
+    <aside class="notes">
+      <p>Along the same lines as trainings, come to conferences like this.</p>
+      <p>You're already here. Great job!</p>
+      <p>Conferences can be even more inpsirational than classes.</p>
+      <p>In addition, you have a slate full of great speakers, some of whom you may choose to emulate as role models.</p>
+      <p>If you can't make it to conferences, watch conference videos online.</p>
+      <p>They're cheaper and more convenient (but way less fun) than going yourself.</p>
+    </aside>
+  </section>
+
+  <section>
+    <h2>Join a Community</h2>
+
+    <aside class="notes">
+      <p>Find a community.</p>
+      <p>This can be a meetup, a hack-a-thon, or anyplace else a group of like-minded developers gathers.</p>
+      <p>And don't forget to assess your daily workplace.</p>
+      <p>This is the community you're in more than any other.</p>
+      <p>If it's not doing it for you, find a new one (apologies to your boss if they're sitting next to you).</p>
+      <p>If you're content in your job or you prefer working solo, then think about some of the other ways to join a community.</p>
+      <p>Keep in mind that it's an important part of your personal growth.</p>
+    </aside>
+  </section>
+
+  <section id="professional-socialization">
+    <h2>Professional Socialization</h2>
+
+    <aside class="notes">
+      <p>Another reason conferences and community is so important is the ability to socialize with other professionals.</p>
+      <p>This helps to establish and reinforce appropriate social behaviors within the community.</p>
+      <p>This is such an important part of being a professional that it was institutionalized hundreds of years ago in the British legal profession.</p>
+      <p>Anyone hoping to join the legal profession was forced to go through a system of Inns of Court dinners that reinforced these social norms in the community.</p>
+      <p>These events also provide opportunities for networking, benchmarking of your skills against the industry, as well as learning and even emotional support.</p>
+      <p>Pretty neat. Who wants to start one for JS?</p>
+    </aside>
+  </section>
+
+  <section>
+    <h2>Coach Others</h2>
+
+    <aside class="notes">
+      <p>We talked about coaching, but remember that you can be a coach.</p>
+      <p>In the work environment, this line between teacher and student doesn't exist.</p>
+      <p>There is almost assuredly something you know how to do that even someone who has been doing this for many years doesn't now how to do.</p>
+      <p>Or at least you have an interesting question or idea for experiment that you can propose and work on jointly with someone else.</p>
+      <p>The best teachers are those that hope their students can teach them something new every day.</p>
+    </aside>
+  </section>
+
+  <section>
+    <h2>Stay Out of Ruts</h2>
+
+    <blockquote>
+      Experts past their prime come to be labeled as 'deadwood' or as members of an 'old guard', resistant to new ways of doing things [1].
+    </blockquote>
+
+    <aside class="notes">
+      <p>And finally a word of warning.</p>
+      <p>As we grown in expertise and bury these patterns of practice in our subconscious, there is a danger that these habits will become increasingly resistant to change.</p>
+      <p>If you feel yourself getting 'stuck in a rut,' or you feel like you're becoming the old crotchety developer on your team, then that should be a red flag.</p>
+      <p>Bereiter and Scardamalia go on to say, "Getting into a rut is proof that you are not carrying on the process of expertise."</p>
+      <p>We're lucky enough to work in an industry where there is no end to the expertise we can accumulate.</p>
+      <p>Stay out of that rut. Continue building your expertise. It's ultimately good for all of us.</p>
+    </aside>
+  </section>
+
+  <section id="fin">
+    <h2>Fin</h2>
+
+    <aside>
+      <p>Thank you very much.</p>
+    </aside>
+  </section>
+
+  <section id="bye">
+    <div>
+      <div class="about-img">
+        <img src="images/bob.png" alt="">
+      </div>
+      <div class="about-meta">
+        <h2>Bob Holt</h2>
+        <h3>Bocoup</h3>
+        <p>@bobholt</p>
+      </div>
+    </div>
+
+    <aside>
+      <p>I'm Bob Holt.</p>
+    </aside>
+  </section>
+
+  <section id="references-1">
+    <h2>References</h2>
+    <dl class="references">
+      <dt>[1]</dt>
+      <dd>C. Bereiter and M. Scardamalia, <cite>Surpassing Ourselves: An Inquiry into the Nature and Implications of Expertise</cite>. Chicago, IL: Open Court, 1993.</dd>
+      <dt>[2]</dt>
+      <dd>CBC News, "INTERVIEW: Paul McCartney heads to Canada," <cite>CBCNews</cite>. Canadian Broadcasting Corporation, 6 Aug 2010; http://www.cbc.ca/news/arts/music/story/2010/08/06/paul-mccartney-interview.html (Accessed 6 June 2013).</dd>
+      <dt>[3]</dt>
+      <dd>G. Cheetham and G. Chivers, <cite>Professions, Competence and Informal Learning</cite>. Cheltenham, UK: Edward Elgar, 2005.</dd>
+      <dt>[4]</dt>
+      <dd>H.L. Dreyfus and S.E. Dreyfus, <cite>Mind Over Machine: The Power of Human Intuition and Expertise in the Era of the Computer</cite>. Oxford, UK: Basil Blackwell, 1986.</dd>
+      <dt>[5]</dt>
+      <dd>J.D. Bransford, A.L. Brown, and R.R. Cocking, Eds. <cite>How People Learn: Brain, Mind, Experience, and School</cite>. Expanded ed. National Academy of Sciences. Washington, DC: National Academy Press, 2000.</dd>
+    </dl>
+
+    <aside class="notes">
+      <p>I have dozens of resources for you.</p>
+    </aside>
+  </section>
+
+  <section id="references-2">
+    <h2>References (cont.)</h2>
+    <dl class="references">
+      <dt>[6]</dt>
+      <dd>D. Schön, <cite>The Reflective Practitioner: How Professionals Think in Action</cite>. New York: Basic Books, 1983.</dd>
+      <dt>[7]</dt>
+      <dd>D. Schön, <cite>Educating the Reflective Practitioner</cite>. San Francisco: Jossey-Bass, 1987.</dd>
+      <dt>[8]</dt>
+      <dd>A. Smithers. "Able to dribble, but not to score," <cite>Times Educ. Suppl.</cite>, p. 11, 24 Feb. 1995.</dd>
+      <dt>[9]</dt>
+      <dd>Wikipedia contributors. "Procedural Memory," <cite>Wikipedia, The Free Encyclopedia</cite>. Wikimedia Foundation, Inc., 13 May 2013; http://en.wikipedia.org/wiki/Procedural_memory (Accessed 4 June 2013).</dd>
+      <dt>[10]</dt>
+      <dd>Wikipedia contributors. "Zone of Proximal Development," <cite>Wikipedia, The Free Encyclopedia</cite>. Wikimedia Foundation, Inc., 29 May 2013; http://en.wikipedia.org/wiki/Zone_of_Proximal_Development (Accessed 4 June 2013).</dd>
+    </dl>
+
+    <aside class="notes">
+      <p>I have dozens of resources for you.</p>
+    </aside>
+  </section>
+  <section id="url">
+    <h2><a href="http://github.com/bobholt/talks/jqcon-portland-2013/">http://github.com/bobholt/talks/jqcon-portland-2013/</a></h2>
+
+    <aside class="notes">
+      <p>And you can peruse those at your leisure at this address.</p>
+    </aside>
+  </section>
+
+  </div>
+
+  </div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.min.js"></script>
+  <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: false,
+				history: true,
+        rollingLinks: false,
+
+				theme: 'bob', // available themes are in /css/theme
+				transition: 'none', // default/cube/page/concave/zoom/linear/fade/none
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+					// { src: 'plugin/search/search.js', async: true, condition: function() { return !!document.body.classList; } }
+					// { src: 'plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
