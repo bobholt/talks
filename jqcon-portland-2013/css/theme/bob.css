@@ -25,6 +25,10 @@ body {
   letter-spacing: -0.02em;
   color: #333333; }
 
+.reveal iframe {
+  margin: 0 auto !important;
+}
+
 ::selection {
   color: white;
   background: rgba(79, 64, 28, 0.99);
@@ -151,54 +155,88 @@ body {
    * CUSTOM
    */
 
-  .about-img {
-      float:right; width: 50%;
+  .reveal .about-img {
+    float:right;
+    width: 50%;
   }
 
-  .about-img > img {
+  .reveal .about-img > img {
     max-height: 50%;
     border: 0;
     box-shadow: none;
     background: none;
   }
 
-  .about-meta {
+  .reveal .about-meta {
     float:right;
     width: 33%;
     padding: 15px 0;
     max-height: 50%;
     margin-top: 8%;
   }
-  .school .reveal .state-background {
-    background: transparent url(../../images/school.jpg) no-repeat fixed center center;
-    background-size: cover;
-  }
 
-  .forest-path .reveal .state-background {
-    background: transparent url(../../images/forest-path.jpg) no-repeat fixed center center;
-    background-size: cover;
-  }
 
-  .great .reveal .state-background {
-    background: transparent url(../../images/great.jpg) no-repeat fixed center center;
-    background-size: cover;
-  }
+.baby .reveal .state-background {
+  background: transparent url(../../images/malcolm.jpg) no-repeat fixed center center;
+  background-size: contain;
+}
 
-  .equations .reveal .state-background {
-    background: transparent url(../../images/equations.jpg) no-repeat fixed center center;
-    background-size: cover;
-  }
+.bored .reveal .state-background {
+  background: transparent url(../../images/bored.jpg) no-repeat fixed center center;
+  background-size: cover;
+}
 
-  .bored .reveal .state-background {
-    background: transparent url(../../images/bored.jpg) no-repeat fixed center center;
-    background-size: cover;
-  }
+.brainy .reveal .state-background {
+  background: transparent url(../../images/brainy.jpg) no-repeat fixed center center;
+  background-size: cover;
+}
 
-  .footballer .reveal .state-background {
-    background: transparent url(../../images/soccer.jpg) no-repeat fixed center center;
-  }
+.coaching .reveal .state-background {
+  background: transparent url(../../images/coaching.jpg) no-repeat fixed center center;
+  background-size: cover;
+}
 
-  .bullet-list > li {
+.equations .reveal .state-background {
+  background: transparent url(../../images/equations.jpg) no-repeat fixed center center;
+  background-size: cover;
+}
+
+.experiment .reveal .state-background {
+  background: transparent url(../../images/experiment.jpg) no-repeat fixed center center;
+  background-size: contain;
+}
+
+.failure .reveal .state-background {
+  background: transparent url(../../images/fail.jpg) no-repeat fixed center center;
+  background-size: cover;
+}
+
+.great .reveal .state-background {
+  background: transparent url(../../images/great.jpg) no-repeat fixed center center;
+  background-size: cover;
+}
+
+.robot .reveal .state-background {
+  background: transparent url(../../images/robot.jpg) no-repeat fixed center center;
+  background-size: contain;
+}
+
+.school .reveal .state-background {
+  background: transparent url(../../images/school.jpg) no-repeat fixed center center;
+  background-size: cover;
+}
+
+.show-of-hands .reveal .state-background {
+  background: transparent url(../../images/show-of-hands.jpg) no-repeat fixed center center;
+  background-size: contain;
+}
+
+.thumbs-down .reveal .state-background {
+  background: transparent url(../../images/thumbs-down.jpg) no-repeat fixed center center;
+  background-size: cover;
+}
+
+.bullet-list > li {
     margin-bottom: .5em;
   }
 
@@ -208,6 +246,8 @@ body {
      display:block;
      text-shadow: 0 0 10px #000000;
      position: fixed;
+     width: 100%;
+     text-align: center;
    }
   .reveal small > a:not(.image) {
     color: #fff;
