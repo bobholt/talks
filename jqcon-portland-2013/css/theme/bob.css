@@ -216,6 +216,11 @@ body {
   background-size: cover;
 }
 
+.layout .reveal .state-background {
+  background: transparent url(../../images/css-layout.jpg) no-repeat fixed center center;
+  background-size: contain;
+}
+
 .robot .reveal .state-background {
   background: transparent url(../../images/robot.jpg) no-repeat fixed center center;
   background-size: contain;
@@ -241,16 +246,16 @@ body {
   }
 
    .reveal small {
-     color: #fff;
+     color: #000;
      bottom: 0;
      display:block;
-     text-shadow: 0 0 10px #000000;
      position: fixed;
      width: 100%;
      text-align: center;
+     background-color: rgba(218, 218, 218, 0.75);
    }
   .reveal small > a:not(.image) {
-    color: #fff;
+    color: #000;
     text-decoration: underline;
   }
 
