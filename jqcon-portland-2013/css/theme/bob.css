@@ -181,6 +181,11 @@ body {
   background-size: contain;
 }
 
+.bauhaus .reveal .state-background {
+  background: transparent url(../../images/bauhaus.jpg) no-repeat fixed center center;
+  background-size: contain;
+}
+
 .bored .reveal .state-background {
   background: transparent url(../../images/bored.jpg) no-repeat fixed center center;
   background-size: cover;
@@ -198,6 +203,11 @@ body {
 
 .equations .reveal .state-background {
   background: transparent url(../../images/equations.jpg) no-repeat fixed center center;
+  background-size: cover;
+}
+
+.ew .reveal .state-background {
+  background: transparent url(../../images/ewface.jpg) no-repeat fixed center center;
   background-size: cover;
 }
 
