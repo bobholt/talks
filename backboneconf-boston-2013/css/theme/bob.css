@@ -227,22 +227,22 @@ body {
 }
 
 .aggregate1 .reveal .state-background {
-  background: transparent url(../../images/aggregate1.png) no-repeat fixed center center;
+  background: #fff url(../../images/aggregate1.png) no-repeat fixed center center;
   background-size: contain;
 }
 
 .aggregate2 .reveal .state-background {
-  background: transparent url(../../images/aggregate2.png) no-repeat fixed center center;
+  background: #fff url(../../images/aggregate2.png) no-repeat fixed center center;
   background-size: contain;
 }
 
 .aggregate3 .reveal .state-background {
-  background: transparent url(../../images/aggregate3.png) no-repeat fixed center center;
+  background: #fff url(../../images/aggregate3.png) no-repeat fixed center center;
   background-size: contain;
 }
 
 .aggregate4 .reveal .state-background {
-  background: transparent url(../../images/aggregate4.png) no-repeat fixed center center;
+  background: #fff url(../../images/aggregate4.png) no-repeat fixed center center;
   background-size: contain;
 }
 
@@ -258,7 +258,7 @@ body {
 
 .bullsfirst .reveal .state-background {
   background: transparent url(../../images/bullsfirst.png) no-repeat fixed center center;
-  /*background-size: contain;*/
+  background-size: contain;
 }
 
 .coathangers .reveal .state-background {
@@ -292,7 +292,7 @@ body {
 }
 
 .highlighted .reveal .state-background {
-  background: transparent url(../../images/bullsfirst-highlighted.png) no-repeat fixed center center;
+  background: transparent url(../../images/language.jpg) no-repeat fixed center center;
 }
 
 .isolate .reveal .state-background {
