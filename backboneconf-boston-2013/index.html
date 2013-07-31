@@ -4,10 +4,7 @@
 	<head>
 		<meta charset="utf-8">
 
-		<title>Home-growing Top-Notch Developers: jQuery Conference, Portland, OR, 14 June 2013</title>
-
-		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
-		<meta name="author" content="Hakim El Hattab">
+		<title>Domain-Driven Web Applications Using Backbone: BackboneConf, Boston, MA 31 July 2013</title>
 
 		<meta name="apple-mobile-web-app-capable" content="yes" />
 		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
@@ -37,16 +34,19 @@
       <!-- Any section element inside of this container is displayed as a slide -->
       <div class="slides">
 
-        <section id="start" data-state="start" style="height: 100%;">
-          <small><a href="http://www.flickr.com/photos/lac-bac/4678565737/">A crane lowers a plank to construct a new keel in the ways immediately after the successful launch of a ship.</a> by Claude P. Dettloff. National Film Board of Canada. Photothèque. Library and Archives Canada<br />
-          <a href="http://creativecommons.org/licenses/by-nc/2.0/">Attribution-NonCommercial License</a></small>
-
+        <section id="title">
           <h1 style="margin-bottom: .5em;">Domain-Driven Web Applications Using Backbone</h1>
           <h3>BackboneConf &middot; Boston, MA<br>31 July 2013</h3>
 
+        </section>
+
+        <section id="start" data-state="start" style="height: 100%;">
+          <small><a href="http://www.flickr.com/photos/lac-bac/4678565737/">A crane lowers a plank to construct a new keel in the ways immediately after the successful launch of a ship.</a><br />by Claude P. Dettloff. National Film Board of Canada. Photothèque. Library and Archives Canada<br />
+          <a href="http://creativecommons.org/licenses/by-nc/2.0/">Attribution-NonCommercial License</a></small>
+
           <aside class="notes">
             <p>Thank you very much.</p>
-            <p>Today we're going to talk about Domain-Driven JavaScript Development using Backbone.</p>
+            <p>I'll be talking to you today about Domain-Driven JavaScript Development using Backbone.</p>
             <p>But, before we get into what that means, let’s take a quick look at this picture, because I think it provides a useful metaphor for software development.</p>
             <p>If you look off in the distance of the center of the photograph, you’ll see a just-launched ship sailing away.</p>
             <p>And here at the top, you’ll notice a crane bringing in the first beam that will form the keel of a new ship to be constructed in the same drydock that just launched the previous ship.</p>
@@ -55,42 +55,23 @@
           </aside>
         </section>
 
-        <section id="about-me">
-          <div>
-            <div class="about-img">
-              <img src="images/bob.png" alt="">
-            </div>
-            <div class="about-meta">
-              <h2>Bob Holt</h2>
-              <h3>Bocoup</h3>
-              <p>@bobholt</p>
-            </div>
-          </div>
-
-          <aside class="notes">
-            <p>So who am I? I'm Bob Holt. I work on the Open Web at Bocoup here in Boston.</p>
-            <p>If you're unfamiliar with us, Bocoup is an Open Web technology company by and for programmers.</p>
-            <p>We create new Open Web technologies and help them become viable through consulting, training, coaching and community development - like putting on this conference.</p>
-            <p>Before coming to Bocoup, I worked in a variety of capacities doing everything from simple microsites to designing and building large-scale business-critical web applications.</p>
-            <p>Thes big applications - things like trading platforms for mutual fund portfolio managers or applications that help an energy company manage the flow of resources throughout their system - are arguably the more interesting problems.</p>
-            <p>But also the most difficult, because these are applications that CANNOT FAIL.</p>
-          </aside>
-        </section>
-
         <section id="rigor">
-          <ul class="bullet-list">
-            <li>Asset Management</li>
-            <li>Design Patterns</li>
-            <li>Modularization</li>
-            <li>Linting</li>
-            <li>Testing</li>
-            <li>Build Process</li>
-          </ul>
+
+          <img src="images/commonjs-logo.png" style="max-width: 200px;">
+          <img src="images/component-logo.png" style="max-width: 200px;">
+          <img src="images/require-logo.png" style="max-width: 200px;"><br />
+          <img src="images/jshint-blue.png" style="max-width: 200px;">
+          <img src="images/jslint-logo.png" style="max-width: 200px;"><br />
+          <img src="images/jasmine_logo.png" style="max-width: 200px;">
+          <img src="images/logo-qunit.png" style="max-width: 200px;">
+          <img src="images/mocha.png" style="max-width: 200px;"><br />
+          <img src="images/yeoman-logo.png" style="max-width: 200px;">
+          <img src="images/bower-logo.png" style="max-width: 200px;">
+          <img src="images/grunt-logo.png" style="max-width: 200px;">
 
           <aside class="notes">
-            <p>So when we talk about building applications that can’t fail… </p>
-            <p>If we look at the last few years, we’ve come a long way in bringing engineering rigor to the client side – particularly in referring to JavaScript. </p>
-            <p>We’ve implemented asset and dependency management, patterns, static code analysis, testing, building…</p>
+            <p>If we look at the last few years, we’ve come a long way in bringing engineering rigor to the client side – particularly in JavaScript. </p>
+            <p>We’ve implemented asset and dependency management, design patterns, static code analysis, testing, building…</p>
           </aside>
         </section>
 
@@ -110,62 +91,90 @@
           </aside>
         </section>
 
-        <section id="ddd" data-state="ddd" style="height: 100%;">
+        <section id="about-me">
+          <div>
+            <div class="about-img">
+              <img src="images/bob.png" alt="">
+            </div>
+            <div class="about-meta">
+              <h2>Bob Holt</h2>
+              <h3>Bocoup</h3>
+              <p>@bobholt</p>
+            </div>
+          </div>
+
           <aside class="notes">
-            <p>Enter: Domain-Driven Design</p>
-            <p>This book, which came out in 2004, defined an approach to software development that had been maturing for quite a long time.</p>
-            <p>You might imagine a book on software architecture to be a pretty exhausting read, but I found it to be very engaging. I highly recommended it.</p>
-            <p>The first part of the book talks about the theory and basic implementation of domain-driven design, which is what we’ll cover today.</p>
-            <p>The latter part of the book covers refactoring the application and some general software development best practices that are useful for any project.</p>
+            <p>So I'm Bob Holt. I work on the Open Web at Bocoup here in Boston.</p>
+            <p>Before joining Bocoup, I worked at a large consulting firm that specialized in clients in the financial and energy markets.</p>
+            <p>These firms need big applications - things like trading platforms for mutual fund portfolio managers or applications that help an energy company manage the flow of resources throughout their system.</p>
+            <p>Traditionally, those applications were built on top of Java or .NET, and Domain-Driven Design was our preferred strategy.</p>
+            <p>So when these applications started to move to the web platform, we wanted to see if we could make DDD work there, too, because these applications are no less complex, and need the same level of data integrity and stability.</p>
           </aside>
         </section>
 
         <section id="dogma">
+
+          <blockquote>Philosophical dogma doesn't interest me. <p class="cite">Bob Dylan</p></blockquote>
           <aside class="notes">
-            <p>And before we go further, let's be clear that this isn't the only way to architect applications. This is one strategy, and is really suited to a particular type of large model-centric application.</p>
-            <p>Other approaches are <em>equally valid</em>. We'll see a very different approach tomorrow when John Hann shows us CujoJS.</p>
+            <p>Now, before we go further, let's be clear that this isn't the only way to architect applications. This is one strategy, and is really suited to a particular type of large data-centric application.</p>
+            <p>Other approaches are <em>equally valid</em>. We'll see a very different approach tomorrow when John Hann shows us CujoJS. Just pick what works for your particular needs.</p>
+          </aside>
+        </section>
+
+         <section id="ddd" data-state="ddd" style="height: 100%;">
+          <aside class="notes">
+            <p>But right now, we're talking about Domain-Driven Design.</p>
+            <p>This book, which came out in 2004, defined an approach to software development that had been maturing for quite a long time.</p>
+            <p>The first part of the book talks about the theory and basic implementation of domain-driven design, which is what we’ll cover today.</p>
+            <p>The latter part of the book covers some more advanced implementation concepts as well as refactoring the application and some general software development best practices that are useful for any project.</p>
+            <p>But today: just the facts.</p>
           </aside>
         </section>
 
         <section id="domain">
-          <h3>Domain</h3>
-          <p>The subject of the program</p>
-          <p>Examples:</p>
-          <ul class="bullet-list">
-            <li>Airline Booking Program : People Getting on Aircraft</li>
-            <li>Stock Trading Program : Securities and Exchanges</li>
-          </ul>
+          <h2>Domain</h2>
 
           <aside class="notes">
             <p>So what is Domain-Driven Design? Let’s start by defining “Domain.”</p>
 
             <p>The domain is the subject of the program. We can also call it the “business” of the software.</p>
 
-            <p>For example, in an airline booking application, the physical act of human beings getting onto an airplane is the domain of the program.</p>
+          </aside>
+        </section>
 
+        <section id="airline" data-state="airline" style="height: 100%;">
+
+          <small><a href="http://www.flickr.com/photos/x-ray_delta_one/6900637819/">1951 ... flying family!</a> by James Vaughan<br /><a href="http://creativecommons.org/licenses/by/2.0/">Attribution License</a></small>
+
+          <aside class="notes">
+            <p>For example, in an airline booking application, the physical act of human beings getting onto an airplane is the domain of the program.</p>
+          </aside>
+
+        </section>
+
+        <section id="exchange" data-state="exchange" style="height: 100%;">
+
+          <small><a href="http://www.flickr.com/photos/petrick/2291498318/">DSCN1751</a> by Perpetual Tourist<br />
+<a href="http://creativecommons.org/licenses/by-nc-sa/2.0/">Attribution-NonCommercial-ShareAlike License</a></small>
+
+          <aside class="notes">
             <p>Likewise, in a stock trading application, the domain is the universe of securities and exchanges involved in actually making real-life trades.</p>
           </aside>
         </section>
 
         <section id="ddd-definition-1">
-          <h3>Domain-Driven Design</h3>
+          <h2>Domain-Driven Design</h2>
           <p>Manage complex software by placing primary focus on the domain.</p>
-          <ul class="bullet-list">
-            <li>Principles</li>
-            <li>Techniques</li>
-            <li>Practices</li>
-          </ul>
 
           <aside class="notes">
-            <p>Domain-Driven design takes as given that for complex projects, primary focus should be on the domain and domain logic.</p>
+            <p>So Domain-Driven design says that for complex projects, primary focus should be on the domain and its real-world logic.</p>
 
-            <p>DDD offers a collection of principles, techniques, and best practices to help us manage these complex projects</p>
+            <p>DDD offers a collection of principles, techniques, and best practices to help us manage software applications based on this domain.</p>
           </aside>
         </section>
 
         <section id="complex">
-          <h3>What if my software isn't complex?</h3>
-          <blockquote>Put all the business logic into the user interface. […] Use the most automated UI building and visual programming tools available. <span style="float:right;">Eric Evans</span></blockquote>
+          <blockquote>Put all the business logic into the user interface. […] Use the most automated UI building and visual programming tools available. <p class="cite">Eric Evans</p></blockquote>
 
           <aside class="notes">
             <p>So what if you’re software isn’t complex? </p>
@@ -186,13 +195,8 @@
         </section>
 
         <section id="ddd-definition-2">
-          <h3>Domain-Driven Design</h3>
+          <h2>Domain-Driven Design</h2>
           <p>Manage complex software by placing primary focus on the domain.</p>
-          <ul class="bullet-list">
-            <li>Principles</li>
-            <li>Techniques</li>
-            <li>Practices</li>
-          </ul>
 
           <aside class="notes">
             <p>So in Domain-Driven Design, we’re focused on managing COMPLEX software.</p>
@@ -233,13 +237,13 @@
           <small>https://github.com/archfirst/bullsfirst-jquery-backbone</small>
 
           <aside class="notes">
-            <p>This is a screen shot of an example trading application we want to build. Bullsfirst is an open-source proof-of-concept project that we use to test out a variety of application technologies.</p>
+            <p>This is a screen shot of an example trading application we want to build. Bullsfirst is an open-source proof-of-concept project that we used to test out a variety of application technologies.</p>
           </aside>
         </section>
 
         <section id="tiers" data-state="tiers" style="height: 100%;">
           <aside class="notes">
-            <p>We use it to test both front-end client technologies and middle-tier solutions.</p> 
+            <p>We used Bullsfirst to test front-end client technologies and middle-tier and backend solutions.</p> 
 
             <p>We find it to be a bit more robust and grueling test than a todo list, but not quite as taxing as a full application.</p>
 
@@ -251,9 +255,9 @@
           <small>https://github.com/archfirst/bullsfirst-jquery-backbone</small>
 
           <aside class="notes">
-            <p>But you can see this is the type of application we’re trying to build. It’s got a good bit of interaction, and there’s a very sophisticated domain model behind all of this data.</p>
+            <p>But anyway, this is the type of application we’re trying to build. It’s got a good bit of interaction, and there’s a sophisticated domain model behind all of this data.</p>
 
-            <p>So how do we go about building this?</p>
+            <p>So how would we go about building this?</p>
           </aside>
         </section>
 
@@ -267,16 +271,14 @@
         </section>
 
         <section id="backbone">
-          <h3>Backbone.js</h3>
-
-          <blockquote>In an ecosystem where overarching, decides-everything-for-you frameworks are commonplace, and many libraries require your site to be restructured to suit their look, feel, and default behavior — Backbone should continue to be a tool that gives you the freedom to design the full experience of your web application. <span style="float:right;">Jeremy Ashkenas</span></blockquote>
+          <blockquote>In an ecosystem where overarching, decides-everything-for-you frameworks are commonplace, and many libraries require your site to be restructured to suit their look, feel, and default behavior — Backbone should continue to be a tool that gives you the freedom to design the full experience of your web application. <p class="cite">Jeremy Ashkenas</p></blockquote>
 
           <aside class="notes">
             <p>So, it probably comes as no surprise to anyone in this room that we chose Backbone, and I think Jeremy summed it up perfectly in his blog post announcing Backbone 1.0.</p>
 
             <p>In our line of building complex, customized, data-driven applications, the importance of this cannot be overstated.</p>
 
-            <p>Maybe it’s just me, but every time I’ve built even a moderately-complex application with a more “opinionated” framework, I find at least one situation where I need to override some default behavior, and it takes at least ten times longer than it should to do so. I've never run into this flaw with Backbone, and I love it for that.</p>
+            <p>Every time I’ve built even a moderately-complex application with any framework that tries to do more for you, I find at least one situation where I need to override some default behavior, and it takes at least ten times longer than it should to do so. I've never run into this flaw with Backbone, and I love it for that.</p>
           </aside>
         </section>
 
@@ -289,40 +291,31 @@
           </aside>
         </section>
 
-        <section id="discovery">
-          <h3>Discovery</h3>
-
-          <ul class="bullet-list">
-            <li>Begin constructing the domain model</li>
-            <li>Develop a ubiquitous language</li>
-          </ul>
-
+        <section id="discovery" data-state="discovery" style="height: 100%;">
+          <small><a href="http://www.flickr.com/photos/andercismo/2349098787/">MAGNIFYING GLASS</a> by Rafael Anderson Gonzales Mendoza<br />
+<a href="http://creativecommons.org/licenses/by/2.0/">Attribution License</a><br /></small>
           <aside class="notes">
             <p>The first and most important step in this process is the discovery phase.</p>
 
             <p>In this phase, we consult with the business experts to start to piece together the domain model, which again, is just the idea in the experts’ heads.</p>
 
-            <p>In this, we start to compile what is known as an ubiquitous language</p>
+            <p>In this, we start to compile what is known as a ubiquitous language</p>
           </aside>
         </section>
 
         <section id="ubiquitous">
-          <h3>Ubiquitous Language</h3>
-
-          <ul class="bullet-list">
-            <li>Concept shared with Behavior-Driven Development</li>
-            <li>Defined terminology that is shared between all members of the team</li>
-            <li>Used in all code and written and verbal communication</li>
-          </ul>
+          <h2>Ubiquitous Language</h2>
 
           <aside class="notes">
-            <p>Well, what’s this ubiquitous language?</p>
+            <p>The concept of a ubiquitous language is shared with Behavior-Driven Development.</p>
+
+            <p>It's a well-defined terminology that is shared between all members of the team and is used in all code, documentation, and written and verbal communication.</p>
 
             <p>We want every person who touches this project, from the client to the business analyst to the project manager to all of the developers to speak the same language.</p>
 
             <p>Instead of trying to explain things in our lingo having to do with design patterns and databases and such, we instead rigorously define terms as the client understands them.</p> 
 
-            <p>We then don’t have to translate anything between the client and the developers, we’re all speaking the same language.</p>
+            <p>Then we don’t have to translate anything between the client and the developers, we’re all speaking the same language.</p>
           </aside>
         </section>
 
@@ -354,13 +347,21 @@
         </section>
 
         <section id="iterative">
-          <h3>Building the domain model and ubiquitous language is an iterative process</h3>
+          <h2>Iterative process</h2>
 
           <aside class="notes">
             <p>The domain model (and therefore the software implementation of that model) will continue to change throughout the project. </p>
 
             <p>Better abstractions, epiphanies, and clarifications will cause us to continuously perfect our understanding and implementation of the model.</p>
 
+          </aside>
+        </section>
+
+        <section id="agile">
+
+          <h2>Agile?</h2>
+
+          <aside class="notes">
             <p>This raises the question: does this require an agile methodology?</p>
 
             <p>Not necessarily, if you are still willing to iteratively perfect the domain model, but you can maybe see how an agile methodology would not only accommodate, but encourage this iterative process.</p>
@@ -370,8 +371,6 @@
         </section>
 
         <section id="isolate" data-state="isolate" style="height: 100%;">
-          <h3>Isolate the Domain</h3>
-
           <aside class="notes">
             <p>We need to isolate the domain.</p>
 
@@ -383,43 +382,127 @@
 
             <p>And above that, we have our UI layer, which in our situation will be made up entirely of Backbone Views.</p>
 
-            <p>To preserve loose-coupling in this architecture, the levels above are allowed – but not necessarily encouraged – to have direct reference to the levels below, but going up the stack, we only want to communicate via events.</p>
+            <p>To preserve loose-coupling in this architecture, we keep these levels strictly separated.</p>
+
+            <p>The levels above are allowed – but not necessarily encouraged – to have direct reference to the levels below, but going up the stack, we only want to communicate via events.</p>
 
             <p>And if you think about this, it doesn’t make sense for the domain model to know what kind of application is being built on top of it, or for the application to know the exact state of every view. These layers only need to fire events when they change and allow the layers above to respond however they like.</p>
           </aside>
         </section>
 
-        <section id="express">
-          <h3>Express the Model in Software</h3>
-          <ul class="bullet-list">
-            <li>Distinguish Entities, Value Objects, and Services</li>
-            <li>Set Aggregate Boundaries</li>
-            <li>Implement Repositories and Factories</li>
-          </ul>
-
+        <section id="file-system">
+          <img src="images/filesystem.png" alt="">
           <aside class="notes">
-            <p>The first step in expressing the domain model in our software is to distinguish between entities, value objects, and services.</p>
+            <p>We can see this separation in the file system for our application.</p>
 
-            <p>Entities are objects that have identity – if we need to keep track of a particular instance of an object, it is an entity, and we need to treat it in a special way.</p>
+            <p>Domain is obviously our domain layer.</p>
 
-            <p>Value objects are objects that do not have identity. They are mainly used as a representation of attributes – they are commodity objects.</p>
+            <p>What we've called framework is our application layer - it contains various utilities and base object constructors that we use throughout our app.</p>
 
-            Examples would be seats on a Southwest Airlines flight. On most airlines, a seat is an entity – a particular seat is in a particular spot in an aircraft and seats a particular person. But on Southwest, there is no assigned seating, so the seat is just an object with the attribute of being able to hold a person. There is no need to distinguish between separate seats.
+            <p>Pages and Widgets make up our UI layer.</p>
 
-            And finally, services are the parts of the domain model that aren’t really objects – they are more actions. For example, in Bullsfirst, we have an Instrument Service that goes out and gets the current prices of all of the stocks in our system. Once we’ve distinguished the component parts of our domain model, we need to set aggregate boundaries and implement resources and factories.
+            <p>We'll talk a little bit more about services in a bit, but this is basically our infrastructure layer.</p>
+
+            <p>Now, like any software application, this doesn't stay 100% pristine. We may sacrifice purity for maintainability as we start building our software, but we do that explicitly, and after using this as our base for starting to express the model in our software.</p>
+
           </aside>
         </section>
 
-        <section id="aggregate">
-          <aside class="notes">
-            <p>When external objects in our UI or application layer can modify all parts of our domain model willy-nilly, it becomes impossible to maintain data integrity.</p>
+        <section id="express">
+          <h2>Express the Model in Software</h2>
 
-            <p>Instead, we define aggregates based on closely-related objects in our domain model. External objects can then only reference the aggregate root, which must be an entity (it has identity). This root controls access, and enforces business rules within the aggregate, which can contain either entities or value objects.</p>
+          <aside class="notes">
+            <p>When we begin expressing the model as a software implementation, our biggest battle is going to be against complexity.</p>
+
+            <p>We can try to be 100% accurate in our representation of the model, but we will be buried in the implementation details: details that eventually have performance implications as the system tries to keep track of this complexity.</p>
+
+            <p>So how do we simplify our representation of the domain model?</p>
+
+          </aside>
+        </section>
+
+        <section id="relationship">
+          <h2>Clarify Relationship Between Objects</h2>
+          <aside class="notes">
+
+            <p>The first step in expressing the domain model in our software is to clarify the relationship between objects.</p>
+
+            <p>In the real world, most objects that we would model have a intertwined network of bidirectional associations.</p>
+
+            <p>As we come to fully understand the domain model, many of these relationships can be simplified or eliminated altogether in order to make our implementation easier to produce.</p>
+
+            <p>Next, we distinguish between entities, value objects, and services.</p>
+
+          </aside>
+        </section>
+
+        <section id="entities">
+          <h2>Entities</h2>
+
+          <aside class="notes">
+
+            <p>Entities are objects that have identity – if we need to keep track of a particular instance of an object throughout its entire lifecycle, it is an entity, and we need to treat it in a special way.</p>
+
+            <p>People, financial accounts, anything that we want to assign and ID to is most likely an entity.</p>
+
+          </aside>
+        </section>
+
+        <section id="value">
+          <h2>Value Objects</h2>
+          <aside class="notes">
+
+            <p>Value objects are objects that do not have identity. They are commodity objects that are mainly used as attributes on an entity object or passed between entity objects as message parameters.</p>
+
+            <p>For example, on most airlines, a seat is an entity – a particular seat is in a particular spot in an aircraft and seats a particular person. But on Southwest, there is no assigned seating, so the seat is just an object with the attribute of being able to hold a person. There is no need to distinguish between separate seats.</p>
+
+          </aside>
+        </section>
+
+        <section id="services">
+          <h2>Services</h2>
+          <aside class="notes">
+
+            <p>And finally, services are the parts of the domain model that aren’t really objects – they are more actions.</p>
+            <p>For example, in Bullsfirst, we have an Instrument Service that goes out and gets the current prices of all of the stocks (or instruments in our ubiquitous language) in our system.</p>
+
+            <p>Alright, so once we’ve distinguished the our entities, objects, and services, all we have left to do in this basic introduction is to set aggregate boundaries and implement resources and factories.</p>
+          </aside>
+        </section>
+
+        <section id="aggregate1" data-state="aggregate1" style="height: 100%;">
+          <aside class="notes">
+            <p>If we're not thinking about it, we might set up our domain model with a bunch of objects that have various relationships to each other.</p>
+          </aside>
+        </section>
+
+        <section id="aggregate2" data-state="aggregate2" style="height: 100%;">
+          <aside class="notes">
+            <p>Then part of our application might change an object's state at one point, while another part of our application alters another object.</p>
+
+            <p>Or maybe, even worse, different parts of our application try to change the same object at the same time.</p>
+
+            <p>When external parts of our UI or application layer can modify all parts of our domain model willy-nilly, it becomes impossible to maintain data integrity.</p>
+
+          </aside>
+        </section>
+
+        <section id="aggregate3" data-state="aggregate3" style="height: 100%;">
+          <aside class="notes">
+            <p>The solution is to define aggregates based on closely-related objects in our domain model.</p>
+          </aside>
+        </section>
+
+        <section id="aggregate4" data-state="aggregate4" style="height: 100%;">
+          <aside class="notes">
+            <p>External objects can then only reference a defined aggregate root, which must be an entity object. This root controls access to, and enforces business rules within the aggregate, which can contain both entities or value objects.</p>
+
+            <p>Now that we've protected our objects, we need to manage their lifecycle.</p>
           </aside>
         </section>
 
         <section id="repositories">
-          <h3>Repostories</h3>
+          <h2>Repostories</h2>
 
           <ul class="bullet-list">
             <li>Global interface</li>
@@ -430,12 +513,12 @@
           <aside class="notes">
             <p>In Backbone, dealing with the data store involves invoking the Model or Collection’s own fetch() method.</p>
 
-            <p>In Bullsfirst, in theory, our data could quickly become stale, so we aren’t currently caching most (if any) of our data requests.</p>
+            <p>In something like Bullsfirst, our data could quickly become stale, so we aren’t currently caching most (if any) of our data requests.</p>
           </aside>
         </section>
 
         <section id="factories">
-          <h3>Factories</h3>
+          <h2>Factories</h2>
           <ul class="bullet-list">
             <li>Take on the responsibility of creating new objects</li>
             <li>Tying to domain or application can be ungainly</li>
@@ -455,22 +538,25 @@
         <section id="conclusion" data-state="conclusion" style="height: 100%;">
 
           <small>By Ben Pollard from Bristol, CT (Deep in thought) [<a href="http://creativecommons.org/licenses/by-sa/2.0">CC-BY-SA-2.0</a>], <a href="https://commons.wikimedia.org/wiki/File%3ADeep_in_thought.jpg">via Wikimedia Commons</a></small>
-          <p>So this all just scratches the surface of building a domain-driven application on the front-end, and I haven’t shown much code.</p>
 
-          <p>Domain-Driven Design, and I’d argue architecting any complex piece of software, comes down more to how we think about and approach the problem than how we code it.</p>
+          <aside class="notes">
+            <p>So this all just scratches the surface of building a domain-driven application on the front-end, and I haven’t shown much code.</p>
 
-          <p>When you come across what seems to be a fairly complex software problem, DON’T START CODING.</p> 
+            <p>Domain-Driven Design, and I’d argue architecting any complex piece of software, comes down more to how we think about and approach the problem than how we code it.</p>
 
-          <p>Take a cue from this kid and think about it for a while. </p>
+            <p>When you come across what seems to be a fairly complex software problem, DON’T START CODING.</p> 
 
-          <p>Sit on your hands if you have to. Sometimes I do.</p>
+            <p>Take a cue from this kid and think about it for a while. </p>
 
-          <p>I’m Bob Holt. Thank you for listening.</p>
+            <p>Sit on your hands if you have to. Sometimes I do.</p>
+
+            <p>I’m Bob Holt. Thank you for listening.</p>
+          </aside>
         </section>
 
         <section id="url">
           <h3 style='text-transform: none;'>Slides: <a href="http://bobholt.me/bbconf-bos-2013/">bobholt.me/bbconf-bos-2013</a></h2>
-          <h3 style='text-transform: none;'>Source: <a href="http://goo.gl/LOSY6">http://goo.gl/LOSY6</a></h2>
+          <h3 style='text-transform: none;'>Source: <a href="http://goo.gl/h2r5zF">http://goo.gl/h2r5zF</a></h2>
 
           <aside class="notes">
             <p>And you can peruse those at your leisure at these addresses.</p>
