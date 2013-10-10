@@ -1,10 +1,10 @@
-# Home-Growing Top-Notch Developers
-## jQuery Conference Portland
-## 14 June 2013
+# Domain-Driven Web Applications Using Backbone
+## BackboneConf 2013
+## 31 July 2013
 
 ## License
 
 MIT licensed
 
-Copyright (C) 2013 Hakim El Hattab, http://hakim.se
+Copyright (C) 2013 Bob Holt, http://bobholt.me
 
